@@ -10,29 +10,38 @@
 
                 <form (ngSubmit)="onSubmit()">
 
+                    <mat-label>Digits</mat-label>
+                    <br>
                     <mat-form-field class="full-width">
-                        <mat-label>Digits</mat-label>
-                        <input [(ngModel)]="password.digit" name="digit" type="number" matInput required />
+                        <mat-label>Digits </mat-label>
+                        <input [(ngModel)]="password.digit" name="digit" type="number" matInput  />
                     </mat-form-field>
+                    <br>
+                    <mat-label>Special Characters</mat-label>
                     <br>
                     <mat-form-field class="full-width">
                         <mat-label>Special Characters</mat-label>
-                        <input [(ngModel)]="password.specialChar" name="specialChar" type="number" matInput required />
+                        <input [(ngModel)]="password.specialChar" name="specialChar" type="number" matInput />
                     </mat-form-field>
+                    <br>
+                    <mat-label>Lower Case</mat-label>
                     <br>
                     <mat-form-field class="full-width">
                         <mat-label>Lower Case</mat-label>
-                        <input [(ngModel)]="password.lowerCase" name="lowerCase" type="number" matInput required />
+                        <input [(ngModel)]="password.lowerCase" name="lowerCase" type="number" matInput />
                     </mat-form-field>
+                    <br>
+
+                    <mat-label>Upper Case</mat-label>
                     <br>
                     <mat-form-field class="full-width">
                         <mat-label>Upper Case</mat-label>
-                        <input [(ngModel)]="password.upperCase" name="username" type="number" matInput required />
+                        <input [(ngModel)]="password.upperCase" name="username" type="number" matInput  />
                     </mat-form-field>
 
                     <br>
                     <div class="container text-center">
-                        <button type="submit" mat-raised-button color="primary">Login</button>
+                        <button type="submit" mat-raised-button color="primary">Get</button>
                         <button style="margin-left: 20px;" type="reset" mat-raised-button color="accent">reset</button>
                     </div>
 

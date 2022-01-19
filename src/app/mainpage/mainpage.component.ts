@@ -9,10 +9,10 @@ import { BackendCallService } from '../backend-call.service';
 export class MainpageComponent implements OnInit {
 
   password={
-    digit:'',
-    specialChar:'',
-    lowerCase:'',
-    upperCase:''
+    digit:'0',
+    specialChar:'0',
+    lowerCase:'0',
+    upperCase:'0'
   }
   value='';
   status=false;
